@@ -1,6 +1,6 @@
 //arquivo onde é aplicado a personalização (extend)
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html}"],
   theme: {
     extend: {
       colors: {
