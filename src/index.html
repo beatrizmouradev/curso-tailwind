@@ -4,10 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso de TailwindCSS</title>
+    <title>Projetin TailwindCSS</title>
     <link rel="stylesheet" href="../dist/main.css">
 </head>
-<body>
-    <h1>Curso de TailwindCSS</h1>
+<body class="bg-fundo">
+    <!--Prefixo se refere a responsividade. Coloca-se o prefixo nas excessões-->
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="bg-rosaEscuro lg:min-h-screen lg:flex lg:items-center p-8 sm:p-12">
+            <div class="flex-grow">
+                <h1 class="text-white text-center text-2xl sm:text-5xl mb-2">Seja bem-vindo(a)</h1>
+                <p class="text-center text-rosaClaro sm:text-lg">Faça seu login para começar</p>
+            </div>
+        </div>
+        <div class="lg:min-h-screen lg:flex lg:items-center p-12 lg:p-24 xl:p-48">
+            <div class="flex-grow bg-white shadow-xl rounded-md border border-gray-300 p-8">
+                <div class="sm:flex sm:items-center">
+                    <img src="./perfil.jpg" alt="Rosto de uma mulher" class="sm:flex-shrink-0 mx-auto sm:mx-0 h-24 rounded-full">
+                    <div class="sem:ml-4 sm:text-left text-center">
+                        <p class="pl-4 text-xl text-rosaClaro">Ana Beatriz Moura</p>
+                        <p class="pl-4 text-sm text-preto">Desenvolvedora Front-end</p>
+                        <div class="mt-4 pl-4">
+                            <button type="button" class="text-xs y-1 btn">Não é Ana Beatriz?</button>
+                        </div>
+                    </div>
+                </div>
+                <form class="flex w-full mt-8">
+                    <input type="password" class="flex-1 w-full text-preto bg-fundo rounded-md border border-fundo outline-none pl-4" placeholder="Digite sua senha aqui">
+                    <button type="button" class="flex-shrink-0 p-1 ml-4 btn">Entrar</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>

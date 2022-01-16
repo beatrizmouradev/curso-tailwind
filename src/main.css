@@ -1,3 +1,16 @@
 @tailwind base;
+
+.btn {
+    @apply outline-none rounded-md text-fundo bg-rosaEscuro py-2 px-4 font-semibold;
+}
+
+.btn:hover {
+    @apply text-rosaEscuro bg-fundo;
+}
+
+
 @tailwind components;
 @tailwind utilities;
+
+/*criando componentes*/
+
